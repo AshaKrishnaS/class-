@@ -1,0 +1,21 @@
+//class with multiple objects
+using System;
+
+namespace mutlipleobjects
+{
+    class Program
+    {
+        string name = "anu";
+        int age = 14;
+
+        static void Main(string[] args)
+        {
+            Program p1 = new Program();
+            Program p2 = new Program();
+
+            Console.WriteLine(" name is :" + p1.name);
+            Console.WriteLine(" age is : " + p2.age);
+
+        }
+    }
+}
