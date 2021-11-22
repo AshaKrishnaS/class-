@@ -1,0 +1,38 @@
+//program using constructor
+using System;
+
+namespace constructors
+{
+    public class Test
+    {
+        int sum;
+        
+       public  Test(int a, int b)
+        {
+            sum = a + b;
+
+        }
+        public Test(int a,int b,int c)
+        {
+            sum = a + b + c;
+        }
+        public void disp()
+        {
+            Console.WriteLine("sum is : "+ sum);
+        }
+    }
+        
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           
+                Test t = new Test(3, 4);
+            Test t1 = new Test(3, 4,5);
+
+            t.disp();
+            t1.disp();
+
+        }
+    }
+}
