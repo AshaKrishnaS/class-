@@ -1,0 +1,35 @@
+//inheritance
+using System;
+
+namespace inheritance
+{
+    class A
+    {
+        public string name;
+        public void displ()
+        {
+            Console.WriteLine("name is " + name);
+        }
+    }
+    class B : A
+    {
+        
+        public int age =12;
+        public void disp()
+        {
+            Console.WriteLine("age is : " + age);
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            B a = new B();
+            a.name = "anu";
+            a.displ();
+            a.disp();
+            
+        }
+    }
+}
